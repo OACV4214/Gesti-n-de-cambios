@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Esfuerzo de Halstead y Métrica de Madurez del Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="path/to/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+
+    <h1>Esfuerzo de Halstead y Métrica de Madurez del Software</h1>
+    <h2>Métrica de Madurez del Software</h2>
+    <form>
+      <label for="modulos-agregados">Módulos agregados:</label>
+      <input type="number" id="modulos-agregados" name="modulos-agregados">
+      <br>
+      <label for="modulos-modificados">Módulos modificados:</label>
+      <input type="number" id="modulos-modificados" name="modulos-modificados">
+      <br>
+      <label for="modulos-eliminados">Módulos eliminados:</label>
+      <input type="number" id="modulos-eliminados" name="modulos-eliminados">
+      <br>
+      <button type="button" onclick="calcularMadurez()">Calcular Madurez</button>
+    </form>
+    <p id="resultado-madurez"></p>
+
+    <h2>Esfuerzo de Halstead</h2>
+    <form>
+      <label for="operadores-unicos">Operadores Únicos:</label>
+      <input type="number" id="operadores-unicos" name="operadores-unicos">
+      <br>
+      <label for="operandos-unicos">Operandos Únicos:</label>
+      <input type="number" id="operandos-unicos" name="operandos-unicos">
+      <br>
+      <label for="total-operadores">Total de Operadores:</label>
+      <input type="number" id="total-operadores" name="total-operadores">
+      <br>
+      <label for="total-operandos">Total de Operandos:</label>
+      <input type="number" id="total-operandos" name="total-operandos">
+      <br>
+      <button type="button" onclick="calcularEsfuerzo()">Calcular Esfuerzo</button>
+    </form>
+    <p id="resultado-esfuerzo"></p>
+
+    <label for="entrada">Ingrese la cadena:</label>
+    <input type="text" id="entrada">
+    <button onclick="convertir()">Convertir</button>
+    <div id="salida"></div>
+
+	<h1>Buscar y eliminar</h1>
+	<form>
+		<label for="datos">Ingrese el listado de nombres y edades separados por coma:</label>
+		<input type="text" id="datos" placeholder="Ejemplo: Carlos-18,Rosa-23,Alfredo-7">
+		<label for="numeros">Ingrese la lista de números separados por coma:</label>
+		<input type="text" id="numeros" placeholder="Ejemplo: 2,7">
+		<button type="button" onclick="buscarMultiplos()">Buscar</button>
+	</form>
+	<div id="resultado"></div>
+
+    
+  
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
